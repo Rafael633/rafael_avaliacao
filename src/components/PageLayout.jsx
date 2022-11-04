@@ -20,19 +20,13 @@ export const PageLayout = () => {
           }}
         >
           <BottomNavigationAction
-            label="Recents"
+            label="Inicial"
             icon={<Favorite />}
             LinkComponent={Link}
-            to={"/sobre"}
+            to={"/inicio"}
           />
           <BottomNavigationAction
-            label="Favorites"
-            icon={<Favorite />}
-            LinkComponent={Link}
-            to={"/sobre"}
-          />
-          <BottomNavigationAction
-            label="Nearby"
+            label="Produtos"
             icon={<Favorite />}
             LinkComponent={Link}
             to={"/produtos"}
