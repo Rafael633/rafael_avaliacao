@@ -9,7 +9,7 @@ import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 const theme = createTheme();
 
-export default function SignInSide() {
+export default function FetchInicio() {
   return (
     <ThemeProvider theme={theme}>
       <Grid container component="main" sx={{ height: '100vh' }}>
@@ -21,7 +21,6 @@ export default function SignInSide() {
           md={7}
           sx={{
             backgroundImage: 'url(https://gerandoempreendedores.com.br/wp-content/uploads/2020/05/mercado-livre.jpg)',
-            backgroundRepeat: 'no-repeat',
             backgroundColor: (t) =>
               t.palette.mode === 'light' ? t.palette.grey[50] : t.palette.grey[900],
             backgroundSize: 'cover',
@@ -38,13 +37,15 @@ export default function SignInSide() {
               alignItems: 'center',
             }}
           >
-          <Container component="main" sx={{ mt: 8, mb: 2 }} maxWidth="sm">
+          <Container component="main" sx={{ mt: 2, mb: 2 }} maxWidth="sm">
             <Typography variant="h1" component="h1" gutterBottom>
           ** História **
             </Typography>
           <Typography variant="h5" component="h2" gutterBottom>
             {'Mercado Livre é uma empresa argentina de tecnologia que oferece soluções de comércio eletrônico, '}
             {'para que pessoas e empresas possam comprar, vender, pagar, anunciar e enviar produtos por meio da internet.'}
+            {'Opera em 18 países, tem cerca de 30 mil funcionários e é o site de e-commerce mais popular da América Latina em número de visitantes. '}
+            {'A empresa mantém operações na Argentina, Bolívia, Brasil, Chile, Colômbia, Costa Rica, Equador, El Salvador, Guatemala, Honduras, México, Nicarágua, Panamá, Paraguai, Peru, República Dominicana, Uruguai e Venezuela.'}
           </Typography>
           </Container>
           </Box>
